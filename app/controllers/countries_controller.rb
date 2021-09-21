@@ -11,8 +11,8 @@ class CountriesController < ApplicationController
     end 
 
     def create
-        countries = Country.create(country_params)
-        render json: countries
+        country = Country.create(country_params)
+        render json: country
     end
 
     private
