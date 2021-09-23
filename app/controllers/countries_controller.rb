@@ -5,11 +5,6 @@ class CountriesController < ApplicationController
         render json: countries
     end
 
-    def username
-        user = Username.all
-        render json: users
-    end 
-
     def create
         country = Country.create(country_params)
         render json: country
